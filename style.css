@@ -65,6 +65,12 @@ a {
   text-decoration: none;
 
   margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -73,6 +79,7 @@ p {
 
 ul {
   margin-top: 4rem;
+
   list-style: none;
   padding: 0;
 
