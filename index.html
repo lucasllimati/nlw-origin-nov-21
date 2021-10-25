@@ -40,7 +40,7 @@ regras de uma linguagem
         <!-- <img src="https://avatars.githubusercontent.com/u/69853124?v=4" alt="Foto de perfil"> -->
       </div>
 
-      <h1>Lucas Lima</h1>
+      <h1 id="userName">Lucas Lima</h1>
       <a href="https://instagram.com/maykbrito">
         <img src="images/github.svg" alt="icone github">
         olukaslima_
@@ -49,20 +49,20 @@ regras de uma linguagem
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi animi, repellat porro iste quis
         dolore quas.</p>
 
-      <ul>
-        <li>
+      <ul id="socialLinks">
+        <li class="youtube">
           <a href="http://youtube.com" target="_blank">
             <img src="images/youtube.svg" alt="icone youtube"></a>
         </li>
-        <li>
+        <li class="facebook">
           <a href="https://www.facebook.com/olukaslima" target="_blank">
             <img src="images/facebook.svg" alt="icone facebook" target="_blank"></a>
         </li>
-        <li>
+        <li class="instagram">
           <a href="https://www.instagram.com/olukaslima_" target="_blank">
             <img src="images/instagram.svg" alt="icone instagram" target="_blank"></a>
         </li>
-        <li>
+        <li class="twitter">
           <a href="https://twitter.com/olukaslima_" target="_blank">
             <img src="images/twitter.svg" alt="icone twitter" target="_blank"></a>
         </li>
@@ -71,13 +71,29 @@ regras de uma linguagem
   </main>
 
   <script>
-    const links = {
+    const linksSocialMedia = {
       github: "olukaslima_",
-      youtube: "UC8LiqTKCkvN23yQ_guBIA4Q",
+      youtube: "channel/UC8LiqTKCkvN23yQ_guBIA4Q",
       facebook: "olukaslima",
       instagram: "olukaslima_",
       twitter: "olukaslima_"
     }
+
+    function changeSocialMediaLinks() {
+      // document.getElementById('userName').textContent = "Olivia"
+      // userName.textContent = "Marcelo"
+
+      for (let li of socialLinks.children) {
+        const social = li.getAttribute('class');
+
+        li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`;
+
+        alert(li.children[0].href)
+      }
+    }
+
+    changeSocialMediaLinks()
+
   </script>
 
 </body>
