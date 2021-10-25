@@ -1,4 +1,3 @@
-/* Cascating Stylesheet */
 * {
   margin: 0;
 }
@@ -6,7 +5,7 @@
 html,
 body {
   --black: hsl(240, 6%, 13%);
-  --gray: hsl(240, 9%, 89%);
+  --grey: hsl(240, 9%, 89%);
 
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -30,7 +29,7 @@ main {
   margin-right: auto;
   text-align: center;
 
-  color: var(--gray);
+  color: var(--grey);
 }
 
 .avatar {
@@ -57,11 +56,11 @@ main {
 h1 {
   font-size: 1.5rem;
 
-  margin: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 a {
-  color: var(--gray);
+  color: var(--grey);
   text-decoration: none;
 
   margin-top: 0.25rem;
