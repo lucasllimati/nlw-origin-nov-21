@@ -40,13 +40,14 @@ regras de uma linguagem
         <!-- <img src="https://avatars.githubusercontent.com/u/69853124?v=4" alt="Foto de perfil"> -->
       </div>
 
-      <h1 id="userName">Lucas Lima</h1>
+      <h1 id="userName">Mayk Brito</h1>
       <a href="https://instagram.com/maykbrito">
         <img src="images/github.svg" alt="icone github">
         olukaslima_
       </a>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi animi, repellat porro iste quis
+      <p id="userBio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi animi, repellat porro
+        iste quis
         dolore quas.</p>
 
       <ul id="socialLinks">
@@ -70,28 +71,7 @@ regras de uma linguagem
     </div>
   </main>
 
-  <script>
-    const linksSocialMedia = {
-      github: "olukaslima_",
-      youtube: "channel/UC8LiqTKCkvN23yQ_guBIA4Q",
-      facebook: "olukaslima",
-      instagram: "olukaslima_",
-      twitter: "olukaslima_"
-    }
-
-    function changeSocialMediaLinks() {
-      // document.getElementById('userName').textContent = "Olivia"
-      // userName.textContent = "Marcelo"
-
-      for (let li of socialLinks.children) {
-        const social = li.getAttribute('class');
-
-        li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`;
-      }
-    }
-
-    changeSocialMediaLinks()
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
